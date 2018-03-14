@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chatonx.chat.apps"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-sdk tools:overrideLibrary="com.futuremind.recyclerfastscroll"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.chatonx.chat.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.chatonx.chat.activities.GroupMessagingActivity" />
+        <activity android:name="com.chatonx.chat.activities.MessagingActivity" />
+        <activity android:name="com.chatonx.chat.activities.ContactsActivity" />
+        <activity android:name="com.chatonx.chat.activities.SearchActivity" />
+        <activity android:name="com.chatonx.chat.activities.StatusPreviewActivity" />
+        <activity
+            android:name="com.chatonx.chat.activities.ProfilePreviewActivity"
+            android:theme="@style/Dialog" />
+
+        <activity android:name="com.chatonx.chat.activities.UserProfileActivity"
+            android:parentActivityName="com.chatonx.chat.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName="com.chatonx.chat.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.AboutUserActivity"
+            android:label="@string/about"
+            android:parentActivityName="com.chatonx.chat.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.StarredMessagesActivity"
+            android:label="@string/starred"
+            android:parentActivityName="com.chatonx.chat.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.MainActivity" />
+        </activity>
+
+        <activity android:name="com.chatonx.chat.activities.NewGroupActivity" />
+        <activity android:name="com.chatonx.chat.activities.NewBroadcastActivity" />
+        <activity android:name="com.chatonx.chat.activities.AddGroupParticipantsActivity" />
+        <activity android:name="com.chatonx.chat.activities.SelectContactActivity" />
+
+        <activity
+            android:name="com.chatonx.chat.activities.AccountSettingsActivity"
+            android:label="@string/account"
+            android:parentActivityName="com.chatonx.chat.activities.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.ChatSettingsActivity"
+            android:label="@string/chats"
+            android:parentActivityName="com.chatonx.chat.activities.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.DataUsageSettingsActivity"
+            android:label="@string/data"
+            android:parentActivityName="com.chatonx.chat.activities.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.NotificationSettingsActivity"
+            android:label="@string/notif"
+            android:parentActivityName="com.chatonx.chat.activities.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.AboutAndHelpActivity"
+            android:label="@string/about_and_help"
+            android:parentActivityName="com.chatonx.chat.activities.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.ContactsSettingsActivity"
+            android:label="@string/contacts"
+            android:parentActivityName="com.chatonx.chat.activities.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.ProfileSettingsActivity"
+            android:label="@string/profile"
+            android:parentActivityName="com.chatonx.chat.activities.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.PrivacySettingsActivity"
+            android:label="@string/privacy"
+            android:parentActivityName="com.chatonx.chat.activities.AccountSettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.AccountSettingsActivity" />
+        </activity>
+
+        <activity android:name="com.chatonx.chat.activities.SecuritySettingsActivity"
+            android:parentActivityName="com.chatonx.chat.activities.AccountSettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.AccountSettingsActivity" />
+        </activity>
+
+        <activity android:name="com.chatonx.chat.activities.ChangeNumberActivity" />
+
+        <activity android:name="com.chatonx.chat.activities.DeleteAccountActivity"
+            android:label="@string/delete_account"
+            android:parentActivityName="com.chatonx.chat.activities.AccountSettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.AccountSettingsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.chatonx.chat.activities.AboutAppActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_about" />
+
+        <activity
+            android:name="com.chatonx.chat.activities.ChatBackupActivity"
+            android:label="@string/title_activity_chat_backup"
+            android:parentActivityName="com.chatonx.chat.activities.ChatSettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.ChatSettingsActivity" />
+        </activity>
+
+        <activity android:name="com.chatonx.chat.activities.CallInfoActivity"
+            android:parentActivityName="com.chatonx.chat.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.chatonx.chat.activities.ImagePreviewActivity"
+            android:parentActivityName="com.chatonx.chat.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chatonx.chat.activities.MainActivity" />
+        </activity>
+
+        <activity android:name="com.chatonx.chat.activities.VoiceCallActivity" />
+    </application>
+
+</manifest>

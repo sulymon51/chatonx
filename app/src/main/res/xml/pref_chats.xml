@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/chat_settings">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="calls_data_usage"
+            android:title="@string/enter_send"
+            android:summary="@string/enter_mess"/>
+
+        <ListPreference
+            android:entries="@array/pref_vibrate_list_titles"
+            android:entryValues="@array/pref_vibrate_list_values"
+            android:key="message_notifications_vibrate"
+            android:negativeButtonText="CANCEL"
+            android:positiveButtonText="@null"
+            android:summary="@string/font_mess"
+            android:title="@string/font_size" />
+
+        <Preference
+            android:title="@string/wallpaper"/>
+
+        <Preference
+            android:title="@string/chat_backup">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.smc_cuuzy.test"
+            android:targetClass="com.example.smc_cuuzy.test.activities.ChatBackupActivity"
+            android:data="mydata" />
+        </Preference>
+
+        <Preference
+            android:title="@string/chat_history"/>
+
+    </PreferenceCategory>
+
+    <Preference
+        android:enabled="false"/>
+</PreferenceScreen>

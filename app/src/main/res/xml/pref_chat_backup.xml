@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/last_backup"
+        android:icon="@drawable/ic_action_accept"/>
+
+    <PreferenceCategory
+        android:layout="@layout/backup_item"/>
+
+    <PreferenceCategory
+        android:title="@string/google_drive_settings">
+
+        <ListPreference
+            android:entries="@array/backup_to_google_drive_list_titles"
+            android:entryValues="@array/backup_to_google_list_values"
+            android:key="backup_to_google"
+            android:negativeButtonText="CANCEL"
+            android:positiveButtonText="@null"
+            android:title="@string/back_up_to_google" />
+
+        <ListPreference
+            android:dialogTitle="@string/choose_an_account"
+            android:entries="@array/account_list_titles"
+            android:entryValues="@array/account_list_values"
+            android:key="backup_account"
+            android:negativeButtonText="CANCEL"
+            android:positiveButtonText="@null"
+            android:title="@string/account" />
+
+        <ListPreference
+            android:entries="@array/backup_over_list_titles"
+            android:entryValues="@array/backup_over_list_values"
+            android:key="backup_data"
+            android:negativeButtonText="CANCEL"
+            android:positiveButtonText="@null"
+            android:title="@string/backup_over" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="include_videos"
+            android:title="@string/include_videos"
+            android:summaryOn="@string/no_upload_data"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

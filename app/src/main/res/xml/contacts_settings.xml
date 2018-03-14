@@ -1,0 +1,14 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:title="@string/invite_friend"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="calls_data_usage"
+            android:title="@string/show_contacts"
+            android:summary="@string/enable_hidden_contacts"/>
+
+    <Preference
+        android:enabled="false"/>
+</PreferenceScreen>

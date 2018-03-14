@@ -1,0 +1,55 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/who_can_see_my">
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/pref_privacy_info_titles"
+            android:entryValues="@array/pref_popup_list_values"
+            android:key="privacy_last_seen"
+            android:negativeButtonText="CANCEL"
+            android:positiveButtonText="@null"
+            android:title="@string/last_seen" />
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/pref_privacy_info_titles"
+            android:entryValues="@array/pref_popup_list_values"
+            android:key="privacy_profile_photo"
+            android:negativeButtonText="CANCEL"
+            android:positiveButtonText="@null"
+            android:title="@string/profile_photo" />
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/pref_privacy_info_titles"
+            android:entryValues="@array/pref_popup_list_values"
+            android:key="privacy_status"
+            android:negativeButtonText="CANCEL"
+            android:positiveButtonText="@null"
+            android:title="@string/status" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/privacy_greyed_out_item1" />
+
+    <PreferenceCategory
+        android:title="@string/messaging">
+
+        <Preference
+            android:title="@string/blocked_contacts"
+            android:summary="@string/blocked_note"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="privacy_receipts"
+            android:title="@string/read_receipts"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/privacy_greyed_out_item2" />
+</PreferenceScreen>

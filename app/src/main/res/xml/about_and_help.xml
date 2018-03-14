@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Preference
+        android:title="@string/fag">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="http://babsbay.com/" />
+    </Preference>
+
+    <Preference
+        android:title="@string/contact_us"
+        android:summary="@string/need_help"/>
+
+    <Preference
+        android:title="@string/system_status"/>
+
+    <Preference
+        android:title="@string/terms">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="http://babsbay.com/" />
+    </Preference>
+
+    <Preference
+        android:title="@string/appInfo">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.smc_cuuzy.test"
+            android:targetClass="com.example.smc_cuuzy.test.activities.AboutAppActivity"
+            android:data="mydata" />
+    </Preference>
+
+    <Preference
+        android:enabled="false"/>
+
+</PreferenceScreen>

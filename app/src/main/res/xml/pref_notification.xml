@@ -1,0 +1,113 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="enable_notifications"
+        android:title="@string/conver_tones"
+        android:summary="@string/play_sounds"/>
+
+        <PreferenceCategory
+            android:title="@string/message_notif">
+            <RingtonePreference
+                android:defaultValue="content://settings/system/notification_sound"
+                android:key="message_notifications_tone"
+                android:ringtoneType="notification"
+                android:title="@string/notif_tone" />
+            <Preference
+                android:title="@string/contact_tone"
+                android:summary="@string/not_available"
+                android:enabled="false">
+            </Preference>
+
+            <ListPreference
+                android:defaultValue="2"
+                android:entries="@array/pref_vibrate_list_titles"
+                android:entryValues="@array/pref_vibrate_list_values"
+                android:key="message_notifications_vibrate"
+                android:negativeButtonText="CANCEL"
+                android:positiveButtonText="@null"
+                android:title="@string/vibrate_notif" />
+
+            <ListPreference
+                android:defaultValue="2"
+                android:entries="@array/pref_popup_list_titles"
+                android:entryValues="@array/pref_popup_list_values"
+                android:key="message_notifications_popup"
+                android:negativeButtonText="CANCEL"
+                android:positiveButtonText="@null"
+                android:title="@string/popup_notif" />
+
+            <ListPreference
+                android:defaultValue="3"
+                android:entries="@array/pref_light_list_titles"
+                android:entryValues="@array/pref_light_list_values"
+                android:key="message_notifications_light"
+                android:negativeButtonText="CANCEL"
+                android:positiveButtonText="@null"
+                android:title="@string/light" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:title="@string/groups_notif">
+            <RingtonePreference
+                android:defaultValue="content://settings/system/notification_sound"
+                android:key="groups_notifications_tone"
+                android:ringtoneType="notification"
+                android:title="@string/notif_tone" />
+
+            <ListPreference
+                android:defaultValue="2"
+                android:entries="@array/pref_vibrate_list_titles"
+                android:entryValues="@array/pref_vibrate_list_values"
+                android:key="groups_notifications_vibrate"
+                android:negativeButtonText="CANCEL"
+                android:positiveButtonText="@null"
+                android:title="@string/vibrate_notif" />
+
+            <ListPreference
+                android:defaultValue="2"
+                android:entries="@array/pref_popup_list_titles"
+                android:entryValues="@array/pref_popup_list_values"
+                android:key="groups_notifications_popup"
+                android:negativeButtonText="CANCEL"
+                android:positiveButtonText="@null"
+                android:title="@string/popup_notif" />
+
+            <ListPreference
+                android:defaultValue="3"
+                android:entries="@array/pref_light_list_titles"
+                android:entryValues="@array/pref_light_list_values"
+                android:key="groups_notifications_light"
+                android:negativeButtonText="CANCEL"
+                android:positiveButtonText="@null"
+                android:title="@string/light" />
+
+        </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/call_notif">
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:key="call_notifications_ringtone"
+            android:ringtoneType="notification"
+            android:title="@string/ringtone" />
+        <Preference
+            android:title="@string/contact_tone"
+            android:summary="@string/not_available"
+            android:enabled="false">
+        </Preference>
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/pref_vibrate_list_titles"
+            android:entryValues="@array/pref_vibrate_list_values"
+            android:key="call_notifications_vibrate"
+            android:negativeButtonText="CANCEL"
+            android:positiveButtonText="@null"
+            android:title="@string/vibrate_notif" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

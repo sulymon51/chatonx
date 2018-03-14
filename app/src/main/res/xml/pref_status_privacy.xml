@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/who_can_see_my">
+
+        <MultiSelectListPreference
+            android:enabled="true">
+
+
+            <ListPreference
+                android:defaultValue="2"
+                android:entries="@array/pref_privacy_info_titles"
+                android:entryValues="@array/pref_popup_list_values"
+                android:key="privacy_profile_photo"
+                android:negativeButtonText="CANCEL"
+                android:positiveButtonText="@null"
+                android:title="@string/profile_photo" />
+
+            <ListPreference
+                android:defaultValue="2"
+                android:entries="@array/pref_privacy_info_titles"
+                android:entryValues="@array/pref_popup_list_values"
+                android:key="privacy_status"
+                android:negativeButtonText="CANCEL"
+                android:positiveButtonText="@null"
+                android:title="@string/status" />
+            </MultiSelectListPreference>
+
+    </PreferenceCategory>
+
+    <Preference
+        android:title="@string/changes_wont_affect"/>
+</PreferenceScreen>

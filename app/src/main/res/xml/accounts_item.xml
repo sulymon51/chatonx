@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:title="@string/privacy">
+    <intent
+        android:action="android.intent.action.MAIN"
+        android:targetPackage="com.example.smc_cuuzy.test"
+        android:targetClass="com.example.smc_cuuzy.test.activities.PrivacySettingsActivity"
+        android:data="mydata" />
+    </Preference>
+
+    <Preference
+        android:title="@string/security">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="http://babsbay.com/" />
+    </Preference>
+
+    <Preference
+        android:title="@string/two_step">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="http://babsbay.com/" />
+    </Preference>
+
+    <Preference
+        android:title="@string/change_num">
+
+    <intent
+        android:action="android.intent.action.MAIN"
+        android:targetPackage="com.example.smc_cuuzy.test"
+        android:targetClass="com.example.smc_cuuzy.test.activities.ChangeNumberActivity"
+        android:data="mydata" />
+    </Preference>
+
+    <Preference
+        android:title="@string/delete_account">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.smc_cuuzy.test"
+            android:targetClass="com.example.smc_cuuzy.test.activities.DeleteAccountActivity"
+            android:data="mydata" />
+    </Preference>
+
+    <Preference
+        android:enabled="false"/>
+
+</PreferenceScreen>
